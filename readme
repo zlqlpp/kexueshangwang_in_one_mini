@@ -1,1 +1,24 @@
-1
+
+
+项目介绍：
+    本项目只有一个脚本，可以一键安装ss服务端软件，shadowsocks-libv服务端可以连接手机电脑和路由器。
+    
+安装说明：
+    vps:   本安装脚本使用digitalocean.com 平台的VPS为例（非广告，因本人入门和学习都是在此平台，所以在这里只做推荐。
+            如在其它平台的创建VPS并运行脚本过程中遇到问题，请给我留言）
+        vps配置： 5$/月套餐（同时可按小时计费，不用时可随时删除。）。  centos7系统。节点位置：任意即可。
+        
+    脚本使用：
+          yum install wget -y;
+          wget https://raw.githubusercontent.com/zlqlpp/kexueshangwang_in_one_mini/master/install.sh;
+          bash -x install.sh;
+客户端配置：
+          安桌手机客户端：     https://github.com/shadowsocks/shadowsocks-android/releases 
+          windows客户端下载：  https://github.com/shadowsocks/shadowsocks-windows/releases
+          
+          客户端端口：1521
+          客户端密码：123456
+          安全协议：  aes-256-cfb
+          混淆：      无
+          
+注意事项：
