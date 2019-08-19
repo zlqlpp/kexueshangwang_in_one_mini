@@ -12,6 +12,13 @@
           yum install wget -y;
           wget https://raw.githubusercontent.com/zlqlpp/kexueshangwang_in_one_mini/master/install.sh;
           bash -x install.sh;
+          
+          复制上边三条命令到终端，回车执行安装。至此，服务端安装完成。！！！！
+          
+          
+          
+          
+          
 客户端配置：
           安桌手机客户端：     https://github.com/shadowsocks/shadowsocks-android/releases 
           windows客户端下载：  https://github.com/shadowsocks/shadowsocks-windows/releases
