@@ -13,7 +13,7 @@
           wget https://raw.githubusercontent.com/zlqlpp/kexueshangwang_in_one_mini/master/install.sh;
           bash -x install.sh;
           
-          复制上边三条命令到终端，回车执行安装。至此，服务端安装完成。！！！！
+          复制上边三条命令到终端，回车执行安装。当屏幕停住并输出  OK!!!  时，服务端安装完成。！！！！
           
           
           
