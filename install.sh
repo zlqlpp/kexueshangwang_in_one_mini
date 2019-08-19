@@ -29,6 +29,6 @@ cat <<-EOF > ~/ss.json
 EOF
 
 #5.启动(如果VPS重启以后，重新执行下边的指令启动科学上网服务端即可)
-  nohup ss-server -c ~/ss.json -u &
+  nohup ss-server -c ~/ss.json -u >>/dev/null 2>&1 &
   
 echo 'install OK !';
