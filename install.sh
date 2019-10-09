@@ -17,18 +17,21 @@ pushd shadowsocks-libev;
 make install;
 
 #4 shadowsocks-libev 配置文件
-cat <<-EOF > ~/ss.json
+mkdir /etc/shadowsocks;
+cat <<-EOF > /etc/shadowsocks/ss.json
 {
         "server":"0.0.0.0",
         "server_port":1521,
         "local_port":1080,
         "password":"123456",
         "timeout":60,
-        "method":"aes-256-cfb"
+        "method":"aes-256-gcm"
 }
 EOF
 
-#5.启动(如果VPS重启以后，重新执行下边的指令启动科学上网服务端即可)
-  nohup ss-server -c ~/ss.json -u >>/dev/null 2>&1 &
+#6.启动
+  setsid ss-server -c /etc/shadowsocks/ss.json -u &
+
+}
   
 echo 'install OK !';
